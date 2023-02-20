@@ -1,20 +1,14 @@
+import React from 'react';
 import './App.css';
+import Signup from '../components/auth/Signup'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          READ OR NOT
+          <Signup/>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          C'est l'appli de qui caaaaa? 
-        </a>
       </header>
     </div>
   );
