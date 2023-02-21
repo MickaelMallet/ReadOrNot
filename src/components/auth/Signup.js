@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Signup.scss';
+import { Link } from 'react-router-dom';
 
-function RegistrationForm() {
+function Signup(props) {
   const [pseudo, setPseudo] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
@@ -14,35 +15,33 @@ function RegistrationForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Pseudo:
-        <input type="text" value={pseudo} onChange={(e) => setPseudo(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Mot de passe:
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Confirmation du mot de passe:
-        <input type="password" value={passwordConfirm} onChange={(e) => setPasswordConfirm(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Adresse email:
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Confirmation de l'adresse email:
-        <input type="email" value={emailConfirm} onChange={(e) => setEmailConfirm(e.target.value)} />
-      </label>
-      <br />
-      <input type="submit" value="S'inscrire" />
-    </form>
+    <div className="signup-container">
+      <h2>Inscription</h2>
+      <form onSubmit={handleSubmit} className="signup-form">
+        <label>
+          Pseudo:
+          <input type="text" value={pseudo} onChange={(e) => setPseudo(e.target.value)} />
+        </label>
+        <label>
+          Mot de passe:
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        </label>
+        <label>
+          Confirmation du mot de passe:
+          <input type="password" value={passwordConfirm} onChange={(e) => setPasswordConfirm(e.target.value)} />
+        </label>
+        <label>
+          Adresse email:
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </label>
+        <label>
+          Confirmation de l'adresse email:
+          <input type="email" value={emailConfirm} onChange={(e) => setEmailConfirm(e.target.value)} />
+        </label>
+        <input type="submit" value="S'inscrire" />
+      </form>
+    </div>
   );
 }
 
-export default RegistrationForm;
+export default Signup;
