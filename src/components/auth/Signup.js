@@ -14,34 +14,36 @@ function RegistrationForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Pseudo:
-        <input type="text" value={pseudo} onChange={(e) => setPseudo(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Mot de passe:
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Confirmation du mot de passe:
-        <input type="password" value={passwordConfirm} onChange={(e) => setPasswordConfirm(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Adresse email:
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Confirmation de l'adresse email:
-        <input type="email" value={emailConfirm} onChange={(e) => setEmailConfirm(e.target.value)} />
-      </label>
-      <br />
-      <input type="submit" value="S'inscrire" />
-    </form>
+    <div className="registration-form-container">
+      <form className="registration-form" onSubmit={handleSubmit}>
+        <label>
+          Pseudo:
+          <input type="text" value={pseudo} onChange={(e) => setPseudo(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Mot de passe:
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Confirmation du mot de passe:
+          <input type="password" value={passwordConfirm} onChange={(e) => setPasswordConfirm(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Adresse email:
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Confirmation de l'adresse email:
+          <input type="email" value={emailConfirm} onChange={(e) => setEmailConfirm(e.target.value)} />
+        </label>
+        <br />
+        <input type="submit" value="S'inscrire" />
+      </form>
+    </div>
   );
 }
 

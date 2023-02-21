@@ -1,16 +1,17 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Signup from '../components/auth/Signup'
+import Footer from '../components/footer/Index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          <Signup/>
-        </p>
-      </header>
-    </div>
+  <div className="app-container">
+    
+    <Signup />
+    <Footer />
+
+  </div>
+    
   );
 }
 
