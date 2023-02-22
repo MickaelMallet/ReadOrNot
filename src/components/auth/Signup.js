@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Signup.scss';
-import { Link } from 'react-router-dom';
+
 
 function Signup(props) {
   const [pseudo, setPseudo] = useState('');
@@ -16,7 +16,7 @@ function Signup(props) {
 
   return (
     <div className="signup-container">
-      <h2>Inscription</h2>
+      <h1>Inscription</h1>
       <form onSubmit={handleSubmit} className="signup-form">
         <label>
           Pseudo:
