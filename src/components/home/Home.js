@@ -5,15 +5,37 @@ import './style.scss';
 function Home() {
   return (
     <div className="home-container">
-      <h1>Bienvenue sur notre site</h1>
-      <p>Cliquez sur l'un des onglets pour commencer</p>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/signup">Inscription</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="home-left">
+        <h1>Votre prochaine aventure littéraire, savamment orchestrée</h1>
+        <p>
+        Laissez-vous guider par notre traqueur de livres pour des lectures personnalisées. Notre bibliothèque s'adapte à vos goûts et vos envies pour une expérience de lecture unique.
+        </p>
+      </div>
+      <div className="home-right">
+        <div className="home-cover">
+          <img src="https://via.placeholder.com/200x300" alt="book cover" />
+        </div>
+        <div className="home-reviews">
+          <h2>Avis de livres</h2>
+          <ul>
+            <li>
+              <h3>Titre du livre</h3>
+              <p>Par: Auteur du livre</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam pharetra mi, a elementum diam facilisis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </li>
+            <li>
+              <h3>Titre du livre</h3>
+              <p>Par: Auteur du livre</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam pharetra mi, a elementum diam facilisis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </li>
+            <li>
+              <h3>Titre du livre</h3>
+              <p>Par: Auteur du livre</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam pharetra mi, a elementum diam facilisis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
