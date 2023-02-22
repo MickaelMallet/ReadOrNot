@@ -13,7 +13,7 @@ function Home() {
       </div>
       <div className="home-right">
         <div className="home-cover">
-          <img src="https://via.placeholder.com/200x300" alt="book cover" />
+          <img src="https://the-wizards-shop.com/2578-thickbox_default/harry-potter-a-l-ecole-des-sorciers-serpentard-edition-collector.jpg" alt="book cover" />
         </div>
         <div className="home-reviews">
           <h2>Avis de livres</h2>
