@@ -20,20 +20,20 @@ function LoginPage() {
 
   return (
     <div className="login-container">
-    <h1>Connexion</h1>
-    <form onSubmit={handleSubmit}className="login-form">
-      <label>
-        Nom d'utilisateur :
-        <input type="text" value={username} onChange={handleUsernameChange} />
-      </label>
-      <br />
-      <label>
-        Mot de passe :
-        <input type="password" value={password} onChange={handlePasswordChange} />
-      </label>
-      <br />
-      <input type="submit" value="Se connecter" />
-    </form>
+      <h1 className="login-title">Connexion</h1>
+      <form onSubmit={handleSubmit} className="login-form">
+        <label>
+          Nom d'utilisateur :
+          <input type="text" value={username} onChange={handleUsernameChange} />
+        </label>
+        <br />
+        <label>
+          Mot de passe :
+          <input type="password" value={password} onChange={handlePasswordChange} />
+        </label>
+        <br />
+        <input type="submit" value="Se connecter" />
+      </form>
     </div>
   );
 }
