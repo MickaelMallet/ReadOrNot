@@ -1,4 +1,4 @@
-.registration-form-container {
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     background-color: #f2f2f2;
   }
   
-  .registration-form {
+  .signup-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -15,12 +15,12 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .registration-form label {
+  .signup-form label {
     font-size: 18px;
     margin-bottom: 10px;
   }
   
-  .registration-form input {
+  .signup-form input {
     font-size: 16px;
     padding: 10px;
     border: none;
@@ -31,12 +31,12 @@
     transition: border-color 0.3s ease-in-out;
   }
   
-  .registration-form input:focus {
+  .signup-form input:focus {
     border-color: #0077ff;
     outline: none;
   }
   
-  .registration-form input[type="submit"] {
+  .signup-form input[type="submit"] {
     background-color: #0077ff;
     color: white;
     font-size: 18px;
@@ -46,7 +46,7 @@
     transition: background-color 0.3s ease-in-out;
   }
   
-  .registration-form input[type="submit"]:hover {
+  .signup-form input[type="submit"]:hover {
     background-color: #0066cc;
   }
   

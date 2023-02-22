@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Login.scss'
 
 function LoginPage() {
@@ -20,7 +19,9 @@ function LoginPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="login-container">
+    <h1>Connexion</h1>
+    <form onSubmit={handleSubmit}className="login-form">
       <label>
         Nom d'utilisateur :
         <input type="text" value={username} onChange={handleUsernameChange} />
@@ -31,8 +32,9 @@ function LoginPage() {
         <input type="password" value={password} onChange={handlePasswordChange} />
       </label>
       <br />
-      <button type="submit">Se connecter</button>
+      <input type="submit" value="Se connecter" />
     </form>
+    </div>
   );
 }
 
