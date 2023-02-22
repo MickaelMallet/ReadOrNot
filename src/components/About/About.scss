@@ -1,61 +1,51 @@
 
+// .image {
+//     background-image:url(./dev.png);
+//   }
+
 
 .gifAbout-container {
+    // display: flex;
+    // justify-content: space-between;
+    // position: relative;
+    // vertical-align: middle;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // margin-left: 15%;
+    // margin-right: 15%;
+    // justify-content: center;
+    // align-items: center;
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    vertical-align: middle;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 15%;
-    margin-right: 15%;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #ebebeb;
     
 }
 
+// .dev {
+
+// }
+
 img {
-    width: 70%;
+    width: 100%;
     position:inherit;
 
 }
 
-// .pic-legendeWiwi {
-//     position: absolute;
-//     align-items: center;
-//     bottom: 5px;
-//     left: 2px;
-//     background-color: rgba(209, 196, 20, 0.26);
-//     width: 25%;
-//     padding: 6px;   
-// }
+.pic-legendeWiwi {
+    font-style:italic;
+    color: #363636;
+}
 
-// .pic-legendeKiki {
-//     position: absolute;
-//     align-items: center;
-//     bottom: 5px;
-//     left: 2px;
-//     background-color: rgba(230, 215, 215, 0.26);
-//     width: 25%;
-//     padding: 6px;   
-// }
+.pic-legendeKiki {
+    font-style:italic;
+}
 
-// .pic-legendeMika {
-//     position: absolute;
-//     align-items: center;
-//     bottom: 5px;
-//     left: 2px;
-//     background-color: rgba(230, 215, 215, 0.26);
-//     width: 25%;
-//     padding: 6px;   
-// }
+.pic-legendeMika {
+    font-style:italic;
+}
 
-// .pic-legendeJm {
-//     position: absolute;
-//     align-items: center;
-//     bottom: 5px;
-//     left: 2px;
-//     background-color: rgba(230, 215, 215, 0.26);
-//     width: 25%;
-//     padding: 6px;   
-// }
+.pic-legendeJm {
+    font-style:italic;
+}

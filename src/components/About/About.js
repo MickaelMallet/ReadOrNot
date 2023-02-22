@@ -3,11 +3,21 @@ import myGifOfWiwi from './Wiwi.gif';
 import myGifOfKiki from './Kiki.gif';
 import myGifOfMika from './Mika.gif';
 import myGifOfJm from './Jm.gif';
+// import image from './dev.png'
+
 import '../About/About.scss';
 
-const About = () => {
+
+// const dev = image;
+
+function About(){
     return(
-      <div className='container-pic'>  
+       <div>
+        {/* <figure>
+        <img className='dev' src={dev} alt="image" />;   
+        </figure> */}
+      
+      <div className='container-pic'> 
         <div className='gifAbout-container'>
         
         <figure className='pic'>
@@ -26,7 +36,7 @@ const About = () => {
         <img src={myGifOfJm} alt="Photo of Jm" /> 
         <figcaption className='pic-legendeJm'>Photo of Jm</figcaption>
         </figure>
-        
+        </div> 
         </div>
         </div>  
     );
