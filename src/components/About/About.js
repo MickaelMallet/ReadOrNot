@@ -3,19 +3,19 @@ import myGifOfWiwi from './Wiwi.gif';
 import myGifOfKiki from './Kiki.gif';
 import myGifOfMika from './Mika.gif';
 import myGifOfJm from './Jm.gif';
-// import image from './dev.png'
+import image from './dev.png'
 
 import '../About/About.scss';
 
 
-// const dev = image;
+const dev = image;
 
 function About(){
     return(
        <div>
-        {/* <figure>
+        <figure>
         <img className='dev' src={dev} alt="image" />;   
-        </figure> */}
+        </figure>
       
       <div className='container-pic'> 
         <div className='gifAbout-container'>
