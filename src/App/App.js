@@ -11,12 +11,23 @@ import ContactForm from '../components/contact/ContactForm';
 import About from '../components/About/About'
 
 import LibraryPage from '../components/library';
+import Loader from './Loader';
+import './loaderStyle.scss';
 
 
 function App() {
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <Router>
       <div className="app-container">
+
      
         <Navbar />
         <Routes>
@@ -33,9 +44,26 @@ function App() {
         </Routes>
         <Footer />
         
+
+        {loading ? (
+          <Loader /> // Afficher le loader si la page est en cours de chargement
+        ) : (
+          <>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/bibliotheque" element={<LibraryPage />} />
+            </Routes>
+            <Footer />
+          </>
+        )}
+
       </div>
     </Router>
   );
 }
 
 export default App;
+
