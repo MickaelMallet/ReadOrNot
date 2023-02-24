@@ -28,23 +28,6 @@ function App() {
     <Router>
       <div className="app-container">
 
-     
-        <Navbar />
-        <Routes>
-          <Route path="/" element = {<Home />} />
-          <Route path="/signup" element = {<Signup />} />
-          <Route path="/login" element = {<LoginPage />} />
-
-          <Route path="/mentionslegales" element = {<MentionsLegales />} />
-          <Route path="/contact" element = {<ContactForm />} />
-          <Route path="/about" element = {<About />} />
-
-          <Route path="/bibliotheque" element = {<LibraryPage />} />
-
-        </Routes>
-        <Footer />
-        
-
         {loading ? (
           <Loader /> // Afficher le loader si la page est en cours de chargement
         ) : (
