@@ -8,7 +8,7 @@ function SearchResults() {
 
   return (
     <div>
-      <h1>Résultats de la recherche pour "{searchTerm}"</h1>
+      <h1>Bon,la bientôt, les résultats "{searchTerm}"</h1>
       {/* TODO: afficher les résultats de la recherche */}
     </div>
   );
