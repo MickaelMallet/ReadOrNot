@@ -8,56 +8,102 @@ const LibraryPage = () => {
   const booksRead = [
     {
       id: 1,
-      title: "Harry Potter à l'école des sorciers",
+      title: "Vingt mille lieues sous les mers",
       cover:
-        "https://m.media-amazon.com/images/I/916DM68L6cS.jpg",
+        "https://m.media-amazon.com/images/I/91d0MPVV0qL.jpg",
     },
     {
       id: 2,
-      title: "Le Seigneur des Anneaux : La Communauté de l'Anneau",
-      cover: "https://m.media-amazon.com/images/I/81BT9A2Uv7L.jpg",
+      title: "La Guerre des mondes",
+      cover: "https://m.media-amazon.com/images/I/71x3rwTkF1L.jpg",
     },
     {
       id: 3,
-      title: "Le silence des agneaux",
+      title: "La Horde du Contrevent",
       cover:
-        "https://m.media-amazon.com/images/I/814fRILnbnL.jpg",
+        "https://m.media-amazon.com/images/I/814U8H+bKHL.jpg",
     },
     {
       id: 4,
-      title: "1984",
-      cover: "https://images.booksense.com/images/935/262/9780452262935.jpg",
+      title: "Batman: The Dark Knight Returns",
+      cover: "https://m.media-amazon.com/images/I/41wkzapzlNL._SX326_BO1,204,203,200_.jpg",
     },
     {
       id: 5,
-      title: "Orange mécanique",
+      title: "V pour Vendetta",
       cover:
-        "https://i.pinimg.com/originals/eb/da/cb/ebdacbbb68fa1479fcade68c7ca90511.jpg",
+        "https://m.media-amazon.com/images/I/71ihimelAGL.jpg",
     },
     {
       id: 6,
-      title: "Le meilleur des mondes",
+      title: "Gone Girl",
       cover:
-        "https://cdn1.booknode.com/book_cover/975/le_meilleur_des_mondes-974961-264-432.jpg",
+        "https://m.media-amazon.com/images/I/41io6z2h3xL.jpg",
     },
     {
       id: 7,
-      title: "Watchmen",
+      title: "Shutter Island",
       cover:
-        "https://m.media-amazon.com/images/I/71pgBiyXh8L.jpg",
+        "https://m.media-amazon.com/images/I/71f6MWskYDL.jpg",
     },
     {
       id: 8,
-      title: "Misery",
+      title: "La part des ténèbres",
       cover:
-        "https://m.media-amazon.com/images/I/51SSlC2WctL.jpg",
+        "https://m.media-amazon.com/images/I/51852ZOGIsL.jpg",
     },
     {
       id: 9,
-      title: "The key to Mulholland Drive",
+      title: "La nuit des temps",
       cover:
-        "https://m.media-amazon.com/images/I/41ptt9EUgyL.jpg",
+        "https://m.media-amazon.com/images/I/51agfIYIv3L.jpg",
     },
+    {
+      id: 10,
+      title: "Le Hobbit",
+      cover: "https://m.media-amazon.com/images/I/5147HX5ZNRL._AC_UF700,800_QL80_.jpg",
+    },
+    {
+      id: 11,
+      title: "Le Petit Prince",
+      cover: "https://m.media-amazon.com/images/I/71lyHAf7XXL.jpg",
+    },
+    {
+      id: 12,
+      title: "Fahrenheit 451",
+      cover: "https://m.media-amazon.com/images/I/41Xe3FXKz6L._SX301_BO1,204,203,200_.jpg",
+    },
+    {
+      id: 13,
+      title: "1984",
+      cover: "https://m.media-amazon.com/images/I/81StSOpmkjL.jpg",
+    },
+    {
+      id: 14,
+      title: "Le cycle de Dune",
+      cover: "https://m.media-amazon.com/images/I/51DPA94V79L.jpg",
+    },
+    {
+      id: 15,
+      title: "Fondation",
+      cover: "https://m.media-amazon.com/images/I/41TLuCnkTRL.jpg",
+    },
+    {
+      id: 16,
+      title: "l'Héritage",
+      cover: "https://m.media-amazon.com/images/I/81Qk1KAq0kL.jpg",
+    },
+    
+    {
+      id: 18,
+      title: "l'Assassin Royal",
+      cover: "https://m.media-amazon.com/images/I/4169hOAIkmL._SX340_BO1,204,203,200_.jpg",
+    },
+    {
+      id: 19,
+      title: "la Tour Sombre",
+      cover: "https://m.media-amazon.com/images/I/617oXGfEEWL.jpg",
+    }
   ];
  
 
