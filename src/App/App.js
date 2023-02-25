@@ -5,14 +5,16 @@ import Home from '../components/home/Home';
 import Signup from '../components/auth/Signup';
 import Footer from '../components/footer/Index';
 import LoginPage from '../components/auth/Login';
-
 import MentionsLegales from '../components/Mentions/MentionsLegales';
 import ContactForm from '../components/contact/ContactForm';
 import About from '../components/About/About'
-
 import LibraryPage from '../components/library';
 import Loader from './Loader';
+import SearchBar from '../components/Search/SearchBar';
+import SearchResults from '../components/Search/SearchResults';
+
 import './loaderStyle.scss';
+import './style.scss';
 
 
 function App() {
@@ -33,11 +35,17 @@ function App() {
         ) : (
           <>
             <Navbar />
+            <SearchBar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/bibliotheque" element={<LibraryPage />} />
+              <Route path="/search" element={<SearchResults />} />
+
+              <Route path="/contact" element={<ContactForm/>} />
+              <Route path="/mentionslegales" element={<MentionsLegales />} />
+              <Route path="/about" element={<About />} />
             </Routes>
             <Footer />
           </>
