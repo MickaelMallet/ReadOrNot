@@ -16,7 +16,7 @@ function Home() {
           <img src="https://the-wizards-shop.com/2578-thickbox_default/harry-potter-a-l-ecole-des-sorciers-serpentard-edition-collector.jpg" alt="book cover" />
         </div>
         <div className="home-reviews">
-          <h2>Avis de livres</h2>
+          <h4>Avis de livres</h4>
           <ul>
             <li>
               <h3>Titre du livre</h3>

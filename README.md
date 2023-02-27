@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Read or Not ? 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Une application de gestion de livres pour les passionnées de lecture. Cette app permettra aux utilisateurs de suivre les livres qu'ils ont lu, de les recommander a d'autres, de trouver ou de les acheter, de les noter, et pourquoi pas, de se les échanger ! 
 
-## Available Scripts
+- L'application sera développée en utilisant React pour le front, et Node.js pour le back - Nous utiliserons également une base de données pour stocker les informations sur les livres, et les utilisateurs. 
 
-In the project directory, you can run:
+- Appel à des API : data.bnf.fr ( Bibliothèque nationale de France) et Gallica, les collections patrimoniales numérisées de la BnF. 
 
-### `npm start`
+Cette application pourrait être enrichie par d'autres fonctionnalités supplémentaires. (par exemple) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Liens externes vers boutiques marchandes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ - Recommandations d'œuvres en rapport avec notre liste de lecture 
 
-### `npm test`
+- Possibilités d'ajouter amis/envoyer des messages (pas de chat instantané) 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Opportunités
 
-### `npm run build`
+ - Les utilisateurs sont de plus en plus nombreux à choisir le numérique pour stocker, suivre, ou gérer leurs passions. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Avoir une bibliothèque pleine de livres, c'est cool, savoir où on en est, c'est mieux ! Grace a cette app, nous pourrions mettre en pratique beaucoup de features vues tout au long de la formation, aussi bien en back qu'en front. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Quelles seront/pourraient être les technologies utilisées ? 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Front : - React - JS - CSS/SCSS 
 
-### `npm run eject`
+- Back : - Node.js - Bdd : Postgres ou MongoDB
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ - Authentification : - Auth0 ##
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Whitney Toniolo, Jean-Marie Lapernat, Kilian Thoraval, Mickael Mallet
