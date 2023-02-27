@@ -19,6 +19,8 @@ function Navbar() {
           <Link to="/signup" className="navbar-link">
             Inscription
           </Link>
+          <a className="navbar-link-logo" href='/'><img src="https://cdn.discordapp.com/attachments/1061603926757085186/1079764403840368722/Logo_ReadOrNotV2.png" alt="logo" /></a>
+
           <Link to ="/mypage" className="navbar-link">
            Profil
           </Link>
