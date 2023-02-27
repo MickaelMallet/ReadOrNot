@@ -20,7 +20,7 @@ Cette application pourrait être enrichie par d'autres fonctionnalités supplém
 
 Avoir une bibliothèque pleine de livres, c'est cool, savoir où on en est, c'est mieux ! Grace a cette app, nous pourrions mettre en pratique beaucoup de features vues tout au long de la formation, aussi bien en back qu'en front. 
 
-## Quelles seront/pourraient être les technologies utilisées ? 
+## Quelles seront/pourraient être les technologies utilisées ?
 
 - Front : - React - JS - CSS/SCSS 
 

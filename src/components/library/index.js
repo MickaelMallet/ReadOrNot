@@ -99,11 +99,6 @@ const LibraryPage = () => {
       title: "l'Assassin Royal",
       cover: "https://m.media-amazon.com/images/I/4169hOAIkmL._SX340_BO1,204,203,200_.jpg",
     },
-    {
-      id: 19,
-      title: "la Tour Sombre",
-      cover: "https://m.media-amazon.com/images/I/617oXGfEEWL.jpg",
-    }
   ];
  
 
