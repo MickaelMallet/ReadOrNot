@@ -42,7 +42,6 @@ function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/bibliotheque" element={<LibraryPage />} />
               <Route path="/search" element={<SearchResults />} />
-
               <Route path="/contact" element={<ContactForm/>} />
               <Route path="/mentionslegales" element={<MentionsLegales />} />
               <Route path="/about" element={<About />} />
