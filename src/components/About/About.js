@@ -12,9 +12,9 @@ const dev = image;
 
 function About(){
     return(
-       <div>
+       <div className="about">
         <figure>
-        <img className='dev' src={dev} alt="image" />;   
+        <img className='dev' src={dev} alt="image" />   
         </figure>
       
       <div className='container-pic'> 

@@ -18,20 +18,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #ebebeb;
+    // height: 100vh;
+    background-color: white;
     
 }
 
-
-
-// .dev {
-
+.about{
+    display: flex;
+    flex-direction: column;
+    // margin-top: 25em;
+}
+.figure{
+    display: flex;
+}
+.dev {
+    width: 50em;
+    justify-content: center;
+}
+// .pic{
+//     flex-direction: column-reverse;
 // }
 
 img {
-    width: 100%;
+    width: 75%;
     position:inherit;
+    justify-content: center;
 
 }
 

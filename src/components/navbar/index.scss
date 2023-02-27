@@ -2,8 +2,8 @@
 
     display: flex;
     width: 100%;
-    background-color: #282c34;
-    color: white;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/04/85/30/53/1000_F_485305356_mLCTugIw5J5xm7xJ6nCX6unmbkxNCUKp.jpg');
+    color: black;
     justify-content: center;
     align-items: center;
     height: 60px;
@@ -18,17 +18,18 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 20px;
+    font-weight: bold;
   }
   
   .navbar-content a {
     text-decoration: none;
-    color: white;
+    color: rgb(7, 7, 7);
     margin: 0 10px;
     font-size: 18px;
   }
   
   .navbar-content a:hover {
-    color: #FFC947;
+    color: #d17722;
     transform: scaleX(1);
     transform-origin: center;
     transition: all 0.3s ease-in-out;

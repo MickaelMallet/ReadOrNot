@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import './Login.scss';
+// import Signup from './Signup';
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -43,27 +44,24 @@ function LoginPage() {
   };
   
   return (
-<div className="container" id="container">
-	<div class="form-container sign-in-container">
+<div className="containerForm" id="containerForm">
+	<div className="form-container sign-in-container">
     <form onSubmit={handleSubmit} class="login-form">
 			<h1>Se connecter</h1>
-			<input type="text" value={email} onChange={handleEmailChange} />
-      <input type="password" value={password} onChange={handlePasswordChange} />
-			<input type="submit" value="Se connecter" class="submit-btn" />
+			<input type="text" placeholder="Email" value={email} onChange={handleEmailChange} />
+      <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />
+			<input type="submit" value="Se connecter" className="submit-btn" />
 		</form>
 	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-right">
+	<div className="overlay-container">
+		<div className="overlay">
+			<div className="overlay-panel overlay-right">
 				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
+				<p><a href='/signup'>Pas encore de compte ?</a></p>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-
 
   );
 }

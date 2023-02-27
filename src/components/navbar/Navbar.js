@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './style.scss';
+import './index.scss';
 
 function Navbar() {
   return (
     <div className="navbar-container">
       <div className="navbar-content">
-        <Link to="/" className="navbar-logo">
+        {/* <Link to="/" className="navbar-logo">
           LOGO
-        </Link>
+        </Link> */}
         <div className="navbar-links">
           <Link to="/bibliotheque" className="navbar-link">
             Bibliothèque
@@ -18,6 +18,9 @@ function Navbar() {
           </Link>
           <Link to="/signup" className="navbar-link">
             Inscription
+          </Link>
+          <Link to ="/mypage" className="navbar-link">
+           Profil
           </Link>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Form, Route, Routes } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Home from '../components/home/Home';
 import Signup from '../components/auth/Signup';
@@ -12,6 +12,7 @@ import LibraryPage from '../components/library';
 import Loader from './Loader';
 import SearchBar from '../components/Search/SearchBar';
 import SearchResults from '../components/Search/SearchResults';
+import Mypage from '../components/Mypage/Mypage';
 
 import './loaderStyle.scss';
 import './style.scss';
@@ -35,12 +36,13 @@ function App() {
         ) : (
           <>
             <Navbar />
-            <SearchBar />
+            
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/bibliotheque" element={<LibraryPage />} />
+              <Route path="/mypage" element={<Mypage />} />
               <Route path="/search" element={<SearchResults />} />
               <Route path="/contact" element={<ContactForm/>} />
               <Route path="/mentionslegales" element={<MentionsLegales />} />
