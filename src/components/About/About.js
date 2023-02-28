@@ -21,7 +21,7 @@ function About(){
         <img className='dev' src={dev} alt="image" />;
         </figure>
         </div> 
-
+        <div className='pics'>
         <figure className='pic'>
         <img src={myGifOfWiwi} alt="Photo of Wiwi" />
         <figcaption className='pic-legendeWiwi'>Photo of Wiwi</figcaption>
@@ -38,10 +38,11 @@ function About(){
         <img src={myGifOfJm} alt="Photo of Jm" /> 
         <figcaption className='pic-legendeJm'>Photo of Jm</figcaption>
         </figure>
+        </div>
         </div> 
         </div>
 
     );
 };
 
-export default About;
+export default About

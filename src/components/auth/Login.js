@@ -45,7 +45,7 @@ function LoginPage() {
   
   return (
 <div className="containerForm" id="containerForm">
-	<div className="form-container sign-in-container">
+	<div className="form-container login-container">
     <form onSubmit={handleSubmit} class="login-form">
 			<h1>Se connecter</h1>
 			<input type="text" placeholder="Email" value={email} onChange={handleEmailChange} />
@@ -67,19 +67,3 @@ function LoginPage() {
 }
 
 export default LoginPage;
-{/* <div class="login-container">
-  <div class="form-container">
-    <h1 class="login-title">Connexion</h1>
-    <form onSubmit={handleSubmit} class="login-form">
-      <div class="input-field">
-        <input type="text" value={email} onChange={handleEmailChange} />
-        <label>Email</label>
-      </div>
-      <div class="input-field">
-        <input type="password" value={password} onChange={handlePasswordChange} />
-        <label>Mot de passe</label>
-      </div>
-      <input type="submit" value="Se connecter" class="submit-btn" />
-    </form>
-  </div>
-</div> */}

@@ -5,15 +5,15 @@
 	box-sizing: border-box;
 }
 
-body {
-	background: white;
-	justify-content: center;
-	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
-	margin: -10px 0 50px;
+// body {
+// 	background: white;
+// 	justify-content: center;
+// 	flex-direction: column;
+// 	font-family: 'Montserrat', sans-serif;
+// 	// height: 100vh;
+// 	margin: -10px 0 50px;
 
-}
+// }
 
 h1 {
 	font-weight: bold;
@@ -33,43 +33,44 @@ p {
 	margin: 20px 0 30px;
 }
 
-span {
-	font-size: 12px;
-}
+// span {
+// 	font-size: 12px;
+// }
 
 a {
-	color: #333;
+	color: black;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
-}
-
-button {
-	border-radius: 20px;
-	border: 1px solid #4C7C6C;
-	background-color: #4C7C6C;
-	color: #FFFFFF;
-	font-size: 12px;
 	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
 }
 
-button:active {
-	transform: scale(0.95);
-}
+// button {
+// 	border-radius: 20px;
+// 	border: 1px solid #4C7C6C;
+// 	background-color: #4C7C6C;
+// 	color: #FFFFFF;
+// 	font-size: 12px;
+// 	font-weight: bold;
+// 	padding: 12px 45px;
+// 	letter-spacing: 1px;
+// 	text-transform: uppercase;
+// 	transition: transform 80ms ease-in;
+// }
 
-button:focus {
-	outline: none;
-}
+// button:active {
+// 	transform: scale(0.95);
+// }
 
-button.ghost {
-	background-color: transparent;
-	border-color: black;
-	color: black;
-}
+// button:focus {
+// 	outline: none;
+// }
+
+// button.ghost {
+// 	background-color: transparent;
+// 	border-color: black;
+// 	color: black;
+// }
 
 form {
 	background-color: #FFFFFF;
@@ -89,7 +90,7 @@ input {
 	margin: 8px 0;
 	width: 100%;
 }
-.sign-up-container input[type="submit"]:hover {
+input[type="submit"]:hover {
 	background-color: #0f5c1f;
   }
 
@@ -103,7 +104,9 @@ input {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
-  align-items: center;
+  	align-items: center;
+	justify-content: center;
+	
 }
 
 .form-container {
@@ -111,6 +114,7 @@ input {
 	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
+	width: 25em;
 }
 
 .sign-in-container {

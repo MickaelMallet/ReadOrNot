@@ -1,3 +1,4 @@
+
 .gifAbout-container {
     display:flex;
     justify-content: center;
@@ -9,7 +10,7 @@
 
 .dev-title {
     position:absolute;
-    top: 3rem;
+    top: 1rem;
 
     }
 
@@ -38,4 +39,8 @@ img {
 
 .pic-legendeJm {
     font-style:italic;
+}
+.pics{
+    display: flex;
+    height: 1em;
 }
