@@ -3,8 +3,7 @@ import myGifOfWiwi from './Wiwi.gif';
 import myGifOfKiki from './Kiki.gif';
 import myGifOfMika from './Mika.gif';
 import myGifOfJm from './Jm.gif';
-import image from './dev.png'
-
+import image from './dev.png';
 import '../About/About.scss';
 
 
@@ -12,14 +11,17 @@ const dev = image;
 
 function About(){
     return(
-       <div className="about">
-        <figure>
-        <img className='dev' src={dev} alt="image" />   
-        </figure>
-      
+
       <div className='container-pic'> 
+
         <div className='gifAbout-container'>
-        
+
+        <div className='dev-title'>
+        <figure>
+        <img className='dev' src={dev} alt="image" />;
+        </figure>
+        </div> 
+
         <figure className='pic'>
         <img src={myGifOfWiwi} alt="Photo of Wiwi" />
         <figcaption className='pic-legendeWiwi'>Photo of Wiwi</figcaption>
@@ -38,7 +40,7 @@ function About(){
         </figure>
         </div> 
         </div>
-        </div>  
+
     );
 };
 

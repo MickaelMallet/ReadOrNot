@@ -1,62 +1,3 @@
-// .navbar-container {
-
-//     display: flex;
-//     width: 100%;
-//     background-image: url('https://as2.ftcdn.net/v2/jpg/04/85/30/53/1000_F_485305356_mLCTugIw5J5xm7xJ6nCX6unmbkxNCUKp.jpg');
-//     color: black;
-//     justify-content: center;
-//     align-items: center;
-//     height: 60px;
-//     position: fixed;
-//     top:0px;
-//   }
-  
-//   .navbar-content {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     max-width: 1200px;
-//     width: 100%;
-//     margin: 0 20px;
-//     font-weight: bold;
-//   }
-  
-//   .navbar-content a {
-//     text-decoration: none;
-//     color: rgb(7, 7, 7);
-//     margin: 0 10px;
-//     font-size: 18px;
-//   }
-  
-//   .navbar-content a:hover {
-//     color: #d17722;
-//     transform: scaleX(1);
-//     transform-origin: center;
-//     transition: all 0.3s ease-in-out;
-
-//     // text-shadow: 1px 1px 2px #61dafb;
-//   }
-//   .navbar-links{
-//     display: flex;
-//   }
-// .navbar-link-logo{
-//   background-color: #fff;
-//   border-radius: 50%;
-//   width: 80px; /* ajustez la largeur selon vos besoins */
-//   height: 80px; /* ajustez la hauteur selon vos besoins */
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   // overflow: hidden;
-
-//   .img{
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//     border-radius: 50%;
-//   }
-  
-// }
 .navbar-container {
   display: flex;
   width: 100%;
@@ -119,9 +60,6 @@
  margin-left: auto;   /* Pour déplacer la page "profil" tout à droite */
   right: 0px;
 }
-// .navbar-link{
-//   position: fixed;
-//   right: 0px;
-// }
+
 
   

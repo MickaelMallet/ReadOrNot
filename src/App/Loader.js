@@ -1,11 +1,11 @@
 import React from 'react'
-import LoaderGIF from './bookLoader.gif'
+import LoaderVideo from './loader.mp4'
 import './loaderStyle.scss'
 
 export default function Loader() {
     return (
       <div className="loader-container">
-        <img src={LoaderGIF} />
+        <video src={LoaderVideo} autoPlay loop muted/>
       </div>
     );
   }

@@ -1,43 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './style.scss';
 
 function Home() {
-  return (
-    <div className="home-container">
-      <div className="home-left">
-        <h1>Votre prochaine aventure littéraire, savamment orchestrée</h1>
-        <p>
-        Laissez-vous guider par notre traqueur de livres pour des lectures personnalisées. Notre bibliothèque s'adapte à vos goûts et vos envies pour une expérience de lecture unique.
-        </p>
-      </div>
-      <div className="home-right">
-        <div className="home-cover">
-          <img src="https://the-wizards-shop.com/2578-thickbox_default/harry-potter-a-l-ecole-des-sorciers-serpentard-edition-collector.jpg" alt="book cover" />
-        </div>
-        <div className="home-reviews">
-          <h4>Avis de livres</h4>
-          <ul>
-            <li>
-              <h3>Titre du livre</h3>
-              <p>Par: Auteur du livre</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam pharetra mi, a elementum diam facilisis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </li>
-            <li>
-              <h3>Titre du livre</h3>
-              <p>Par: Auteur du livre</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam pharetra mi, a elementum diam facilisis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </li>
-            <li>
-              <h3>Titre du livre</h3>
-              <p>Par: Auteur du livre</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam pharetra mi, a elementum diam facilisis ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
+const [book, setBook] = useState(null);
+
+useEffect(() => {
+fetch('http://kilianthoraval-server.eddi.cloud:8080/book/2')
+.then(response => response.json())
+.then(data => setBook(data))
+.catch(error => console.error(error));
+}, []);
+
+return (
+<div className="home-container">
+<div className="home-left">
+<h1>Votre prochaine aventure littéraire, savamment orchestrée</h1>
+<p>
+Laissez-vous guider par notre traqueur de livres pour des lectures personnalisées. Notre bibliothèque s'adapte à vos goûts et vos envies pour une expérience de lecture unique.
+</p>
+</div>
+<div className="home-right">
+<div className="home-cover">
+{book && <img src={book.img} alt="book cover" />}
+</div>
+<div className="home-reviews">
+<h4>Avis de livres</h4>
+<ul>
+{book && (
+<li>
+<h3>{book.title}</h3>
+<p>Par: {book.author}</p>
+<p>Par: {book.category}</p>
+<p>{book.description}</p>
+</li>
+)}
+</ul>
+</div>
+</div>
+</div>
+);
 }
 
 export default Home;
