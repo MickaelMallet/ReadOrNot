@@ -49,8 +49,8 @@ const handleSubmit = async (event) => {
       console.log('Response received:', data);
 
       if (response.ok) {
-          localStorage.setItem('token', data.token);
-          navigate('/');
+        
+          navigate('/login');
       } else {
           alert(data.error);
       }

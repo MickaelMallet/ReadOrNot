@@ -12,6 +12,8 @@ fetch('http://kilianthoraval-server.eddi.cloud:8080/book/2')
 .catch(error => console.error(error));
 }, []);
 
+console.log("book", book);
+
 return (
 <div className="home-container">
 <div className="home-left">
@@ -25,15 +27,13 @@ Laissez-vous guider par notre traqueur de livres pour des lectures personnalisé
 {book && <img src={book.img} alt="book cover" />}
 </div>
 <div className="home-reviews">
-<h4>Avis de livres</h4>
+<h4>Livre du Mois</h4>
 <ul>
 {book && (
-<li>
-<h3>{book.title}</h3>
-<p>Par: {book.author}</p>
-<p>Par: {book.category}</p>
-<p>{book.description}</p>
-</li>
+  <li>
+    <h3>{book.title}</h3>
+    <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p>
+  </li>
 )}
 </ul>
 </div>
