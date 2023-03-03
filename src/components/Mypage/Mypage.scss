@@ -1,30 +1,34 @@
 .mypage-container {
     width: 90%;
-    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
   }
   
-  .mypage-carousel {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  // .mypage-carousel {
+  //   width: 100%;
+  //   height: 400px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
   
   .mypage-carousel:first-child {
     margin-bottom: 50px;
   }
   
   .mypage-carousel-item {
-    background-color: #f2f2f2;
+    background-color: #e3eee6;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    max-width: 95%;
   }
   
   .mypage-carousel-item img {
     max-width: 80%;
-    height: auto;
+    height: 20em;
     border-radius: 10px;
     margin-bottom: 10px;
   }

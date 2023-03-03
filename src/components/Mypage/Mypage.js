@@ -135,7 +135,7 @@ const Mypage = () => {
 
   return (
     <div className="mypage-container">
-      <h1>My Page</h1>
+      <h1>Ma Bibliothèque</h1>
       <h2>Livres lus</h2>
       <AliceCarousel
         items={itemsLivreLu}

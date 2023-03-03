@@ -24,7 +24,7 @@ return (
 </div>
 <div className="home-left">
 
-<h1>Votre prochaine aventure littéraire, savamment orchestrée</h1>
+<h1>Votre prochaine aventure littéraire, savamment <i>orchestrée</i></h1>
 <p>
 Laissez-vous guider par notre traqueur de livres pour des lectures personnalisées. Notre bibliothèque s'adapte à vos goûts et vos envies pour une expérience de lecture unique.
 </p>
