@@ -8,7 +8,7 @@ import LoginPage from '../components/auth/Login';
 import MentionsLegales from '../components/Mentions/MentionsLegales';
 import ContactForm from '../components/contact/ContactForm';
 import About from '../components/About/About'
-import LibraryPage from '../components/library';
+// import LibraryPage from '../components/library';
 import Loader from './Loader';
 import SearchBar from '../components/Search/SearchBar';
 import SearchResults from '../components/Search/SearchResults';
@@ -48,10 +48,6 @@ function App() {
                 <Navbar />
                 <LoginPage />
               </>} />
-              <Route path="/bibliotheque" element={<>
-                <Navbar />
-                <LibraryPage />
-                </>} />
               <Route path="/mypage" element={<>
                 <Navbar />
                 <Mypage />

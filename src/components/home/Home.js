@@ -16,8 +16,12 @@ fetch('http://kilianthoraval-server.eddi.cloud:8080/book/2')
 console.log("book", book);
 
 return (
+
+  
 <div className="home-container">
-{/* <div className='searchHome'><SearchBar/></div> */}
+<div className='searchHome'>
+<SearchBar/>
+</div>
 <div className="home-left">
 
 <h1>Votre prochaine aventure littéraire, savamment orchestrée</h1>

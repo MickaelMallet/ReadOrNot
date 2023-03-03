@@ -10,9 +10,9 @@ function Navbar() {
           LOGO
         </Link> */}
         <div className="navbar-content-left">
-          <Link to="/bibliotheque" className="navbar-link">
+          {/* <Link to="/bibliotheque" className="navbar-link">
             Bibliothèque  
-          </Link>
+          </Link> */}
           <Link to="/login" className="navbar-link">
             Login  
           </Link>
