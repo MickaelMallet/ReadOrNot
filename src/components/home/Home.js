@@ -30,20 +30,22 @@ Laissez-vous guider par notre traqueur de livres pour des lectures personnalisé
 </p>
 </div>
 <div className="home-right">
-<div className="home-cover">
-{book && <img src={book.img} alt="book cover" />}
-</div>
-<div className="home-reviews">
 <h4>Livre du Mois</h4>
-<ul>
-{book && (
-  <li>
-    <h3>{book.title}</h3>
-    <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p>
-  </li>
-)}
-</ul>
-</div>
+<div className="home-cover">
+    {book && <img src={book.img} alt="book cover" />}
+  </div>
+  <div className="home-reviews">
+    
+    <ul>
+      {book && (
+        <li>
+          <h3>{book.title}</h3>
+          <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p>
+        </li>
+      )}
+    </ul>
+  </div>
+
 </div>
 </div>
 );
