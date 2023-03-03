@@ -5,22 +5,17 @@ import "./Mypage.scss";
 
 const Mypage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [bookRead, setBooksRead] = useState([]);
-  const [bookToRead, setBooksToRead] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("http://kilianthoraval-server.eddi.cloud:8080/books");
       const result = await response.json();
-      console.log(result);
-      setBooksRead(result.filter((book) => book.status === "lu"));
-      setBooksToRead(result.filter((book) => book.status === "a_lire"));
-      setIsLoading(false);
+      setData(result);
     };
+    
     fetchData();
-  },[]);
-  
+  }, []);
 
   const handleSlideChange = (event) => {
     setCurrentIndex(event.item);
@@ -32,20 +27,23 @@ const Mypage = () => {
     1024: { items: 3 },
   };
 
-  const itemsBookRead = bookRead.map((book) => (
+  const itemsBookRead = data.map((book) => (
     <div key={book.id} className="mypage-carousel-item">
       <img src={book.img} alt={book.title} />
       <h3>{book.title}</h3>
+      <p>{book.description}</p>
     </div>
   ));
 
-  const itemsBookToRead = bookToRead.map((book) => (
+  const itemsBookToRead = data.map((book) => (
     <div key={book.id} className="mypage-carousel-item">
       <img src={book.img} alt={book.title} />
       <h3>{book.title}</h3>
+      <p>{book.description}</p>
     </div>
   ));
-console.log(itemsBookRead)
+
+  
   return (
     <div className="mypage-container">
       <h1>Ma Bibliothèque</h1>
@@ -54,7 +52,7 @@ console.log(itemsBookRead)
         items={itemsBookRead}
         responsive={responsive}
         slideToIndex={currentIndex}
-        onSlideChanged={handleSlideChange}
+        // onSlideChanged={handleSlideChange}
         dotsDisabled={true}
         buttonsDisabled={true}
       />
@@ -63,7 +61,7 @@ console.log(itemsBookRead)
         items={itemsBookToRead}
         responsive={responsive}
         slideToIndex={currentIndex}
-        onSlideChanged={handleSlideChange}
+        // onSlideChanged={handleSlideChange}
         dotsDisabled={true}
         buttonsDisabled={true}
       />
