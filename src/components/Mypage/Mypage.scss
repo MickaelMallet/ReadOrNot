@@ -1,16 +1,50 @@
-.book-carousel-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+.mypage-container {
+    width: 90%;
+    margin: 0 auto;
   }
   
-  .book-carousel {
-    width: 80%;
+  .mypage-carousel {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mypage-carousel:first-child {
     margin-bottom: 50px;
   }
   
-  .book-carousel h2 {
-    margin-bottom: 20px;
+  .mypage-carousel-item {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
   }
+  
+  .mypage-carousel-item img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .mypage-carousel {
+      height: 500px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .mypage-carousel {
+      height: 600px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .mypage-carousel {
+      height: 700px;
+    }
+  }
+  
   
