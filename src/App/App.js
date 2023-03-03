@@ -34,19 +34,38 @@ function App() {
         {loading ? (
           <Loader /> // Afficher le loader si la page est en cours de chargement
         ) : (
-          <>
-            <Navbar />
-            
+          <>           
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/bibliotheque" element={<LibraryPage />} />
-              <Route path="/mypage" element={<Mypage />} />
+              <Route path="/" element={<>
+                <Navbar />
+                <Home />
+                </>} />
+              <Route path="/signup" element={<>
+                <Navbar />
+                <Signup />
+              </>} />
+              <Route path="/login" element={<>
+                <Navbar />
+                <LoginPage />
+              </>} />
+              <Route path="/bibliotheque" element={<>
+                <Navbar />
+                <LibraryPage />
+                </>} />
+              <Route path="/mypage" element={<>
+                <Navbar />
+                <Mypage />
+                </>} />
               <Route path="/search" element={<SearchResults />} />
-              <Route path="/contact" element={<ContactForm/>} />
+              <Route path="/contact" element={<>
+                <Navbar />
+                <ContactForm/>
+                </>} />
               <Route path="/mentionslegales" element={<MentionsLegales />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/about" element={<>
+                <Navbar />
+                <About />
+                </>} />
             </Routes>
             <Footer />
           </>
