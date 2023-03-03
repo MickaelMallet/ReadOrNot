@@ -1,52 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import './Mypage.scss'
+import "./Mypage.scss";
 
 const Mypage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
-  // Les items pour le carousel "Livre lu"
-  const itemsLivreLu = [
-    <div key={1} className="mypage-carousel-item">
-      <img src="https://picsum.photos/500/300?random=1" alt="carousel-item-1" />
-      <h3>Livre lu 1</h3>
-    </div>,
-    <div key={2} className="mypage-carousel-item">
-      <img src="https://picsum.photos/500/300?random=2" alt="carousel-item-2" />
-      <h3>Livre lu 2</h3>
-    </div>,
-    <div key={3} className="mypage-carousel-item">
-      <img src="https://picsum.photos/500/300?random=3" alt="carousel-item-3" />
-      <h3>Livre lu 3</h3>
-    </div>,
-    <div key={4} className="mypage-carousel-item">
-    <img src="https://picsum.photos/500/300?random=15" alt="carousel-item-4" />
-    <h3>Livre lu 4</h3>
-  </div>,
-    // Ajouter les autres livres lus ici...
-  ];
+  const [data, setData] = useState([]);
 
-  // Les items pour le carousel "Livre à lire"
-  const itemsLivreALire = [
-    <div key={1} className="mypage-carousel-item">
-      <img src="https://picsum.photos/500/300?random=9" alt="carousel-item-4" />
-      <h3>Livre à lire 1</h3>
-    </div>,
-    <div key={2} className="mypage-carousel-item">
-      <img src="https://picsum.photos/500/300?random=5" alt="carousel-item-5" />
-      <h3>Livre à lire 2</h3>
-    </div>,
-    <div key={3} className="mypage-carousel-item">
-      <img src="https://picsum.photos/500/300?random=6" alt="carousel-item-6" />
-      <h3>Livre à lire 3</h3>
-    </div>,
-    <div key={4} className="mypage-carousel-item">
-      <img src="https://picsum.photos/500/300?random=25" alt="carousel-item-7" />
-      <h3>Livre à lire 4</h3>
-    </div>,
-    // Ajouter les autres livres à lire ici...
-  ];
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("http://kilianthoraval-server.eddi.cloud:8080/books");
+      const result = await response.json();
+      setData(result);
+    };
+    
+    fetchData();
+  }, []);
 
   const handleSlideChange = (event) => {
     setCurrentIndex(event.item);
@@ -58,24 +27,41 @@ const Mypage = () => {
     1024: { items: 3 },
   };
 
+  const itemsBookRead = data.map((book) => (
+    <div key={book.id} className="mypage-carousel-item">
+      <img src={book.img} alt={book.title} />
+      <h3>{book.title}</h3>
+      <p>{book.description}</p>
+    </div>
+  ));
+
+  const itemsBookToRead = data.map((book) => (
+    <div key={book.id} className="mypage-carousel-item">
+      <img src={book.img} alt={book.title} />
+      <h3>{book.title}</h3>
+      <p>{book.description}</p>
+    </div>
+  ));
+
+  
   return (
     <div className="mypage-container">
       <h1>Ma Bibliothèque</h1>
       <h2>Livres lus</h2>
       <AliceCarousel
-        items={itemsLivreLu}
+        items={itemsBookRead}
         responsive={responsive}
         slideToIndex={currentIndex}
-        onSlideChanged={handleSlideChange}
+        // onSlideChanged={handleSlideChange}
         dotsDisabled={true}
         buttonsDisabled={true}
       />
       <h2>Livres à lire</h2>
       <AliceCarousel
-        items={itemsLivreALire}
+        items={itemsBookToRead}
         responsive={responsive}
         slideToIndex={currentIndex}
-        onSlideChanged={handleSlideChange}
+        // onSlideChanged={handleSlideChange}
         dotsDisabled={true}
         buttonsDisabled={true}
       />
@@ -84,4 +70,5 @@ const Mypage = () => {
 };
 
 export default Mypage;
+
 
