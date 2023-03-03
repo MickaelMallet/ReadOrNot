@@ -17,29 +17,26 @@ const Mypage = () => {
     fetchData();
   }, []);
 
-  const handleSlideChange = (event) => {
-    setCurrentIndex(event.item);
-  };
+  // const handleSlideChange = (event) => {
+  //   setCurrentIndex(event.item);
+  // };
 
   const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
+    568: { items: 4 },
+    1024: { items: 6 },
   };
 
   const itemsBookRead = data.map((book) => (
     <div key={book.id} className="mypage-carousel-item">
-      <img src={book.img} alt={book.title} />
-      <h3>{book.title}</h3>
-      <p>{book.description}</p>
+      <img src={book.img} alt={book.title}/>
     </div>
   ));
 
   const itemsBookToRead = data.map((book) => (
     <div key={book.id} className="mypage-carousel-item">
       <img src={book.img} alt={book.title} />
-      <h3>{book.title}</h3>
-      <p>{book.description}</p>
+
     </div>
   ));
 

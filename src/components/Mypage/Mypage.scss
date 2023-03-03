@@ -4,6 +4,7 @@
     margin-bottom: 5em;
     display: flex;
     flex-direction: column;
+
   }
   
   // .mypage-carousel {
@@ -14,24 +15,33 @@
   //   align-items: center;
   // }
   
-  .mypage-carousel:first-child {
-    margin-bottom: 50px;
-  }
+  // .mypage-carousel:first-child {
+  //   margin-bottom: 50px;
+  // }
   
   .mypage-carousel-item {
-    background-color: #e3eee6;
-    border-radius: 10px;
-    padding: 20px;
     text-align: center;
-    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
   
   .mypage-carousel-item img {
-    max-width: 80%;
-    height: 20em;
+    height: 30em; /* ajuster cette valeur selon la hauteur souhaitée */
     border-radius: 10px;
-    margin-bottom: 10px;
+    // transition: transform 0.5s ease-out;
   }
+  // .mypage-carousel-item img:hover {
+  //   transform: translate(0, -3px);
+  //   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+  // }
+  .mypage-carousel-item img:hover {
+ 
+  }
+  
+  
+  
   
   @media (min-width: 768px) {
     .mypage-carousel {
