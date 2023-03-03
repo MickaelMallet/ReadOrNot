@@ -5,11 +5,13 @@ import '../Mentions/MentionsLegales.scss';
 
 const MentionsLegales = () => {
   return (
+    <body className='no-background'>
     <div className='gif-container'>
       <Link to='/'>
         <img src={treeGif} alt='my-gif' />
       </Link>
     </div>
+    </body>
   );
 };
 

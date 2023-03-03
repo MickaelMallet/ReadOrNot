@@ -15,12 +15,9 @@ function About(){
       <div className='container-pic'> 
 
         <div className='gifAbout-container'>
-
-        <div className='dev-title'>
-        <figure>
-        <img className='dev' src={dev} alt="image" />;
+        <figure className='imageDev'>
+        <img className='dev' src={dev} alt="image" />
         </figure>
-        </div> 
         <div className='pics'>
         <figure className='pic'>
         <img src={myGifOfWiwi} alt="Photo of Wiwi" />
@@ -45,4 +42,4 @@ function About(){
     );
 };
 
-export default About
+export default About;

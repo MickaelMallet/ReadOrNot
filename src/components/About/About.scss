@@ -1,9 +1,7 @@
 
 .gifAbout-container {
-    display:flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 0px;
     background-color: #ffffff;
 
 }
@@ -16,12 +14,19 @@
 
 .dev{
     flex-direction: column;
+    margin-top: 7em;
+    margin-left: 2em;
     }
 
 
 img {
-    width: 100%;
+    width: 70%;
 
+}
+.imageDev{
+    margin-left: 22em;
+    margin-top: 7em; 
+    width: 80%;
 }
 
 .pic-legendeWiwi {
@@ -42,5 +47,4 @@ img {
 }
 .pics{
     display: flex;
-    height: 1em;
 }
