@@ -12,20 +12,13 @@
 
 .navbar-content {
   display: flex;
-  justify-content: flex-start; /* Pour aligner les 3 premières pages à gauche */
+  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   width: 100%;
-  margin: 0 20px;
+  margin: 0 auto;
   font-weight: bold;
 }
 
-.navbar-content a {
-  text-decoration: none;
-  color: rgb(7, 7, 7);
-  margin: 0 10px;
-  font-size: 18px;
-}
 
 .navbar-content a:hover {
   color: #d17722;
@@ -34,10 +27,10 @@
   transition: all 0.3s ease-in-out;
 }
 
-.navbar-links {
-  display: flex;
-  align-items: center;
-}
+// .navbar-links {
+//   display: flex;
+//   align-items: center;
+// }
 
 .navbar-link-logo {
   background-color: #fff;
@@ -48,6 +41,26 @@
   justify-content: center;
   align-items: center;
 }
+.navbar-content-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+}
+
+.navbar-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10em;
+}
+
+.navbar-content-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10em;
+}
 
 .img {
   width: 100%;
@@ -55,11 +68,16 @@
   object-fit: cover;
   border-radius: 50%;
 }
-
-.navbar-content .profil {
- margin-left: auto;   /* Pour déplacer la page "profil" tout à droite */
-  right: 0px;
+.navbar-link {
+  font-size: 22px;
+  color: rgb(13, 15, 14);
+  text-shadow: 2px 2px 4px #034b15
 }
+.navbar-content-left a:nth-child(1),
+.navbar-content-left a:nth-child(2) {
+  margin-right: 20px;
+}
+
 
 
   
