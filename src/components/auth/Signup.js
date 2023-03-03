@@ -77,8 +77,8 @@ const handleSubmit = async (event) => {
     <div className="overlay-container">
     <div className="overlay">
     <div className="overlay-panel overlay-right">
-    <h1>Se connecter</h1>
-    <p><a href='/login'>Déjà un compte ?</a></p>
+    <h1>Déjà inscrit ?</h1>
+    <p><a href='/login'>Se connecter</a></p>
     </div>
     </div>
     </div>

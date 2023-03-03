@@ -20,8 +20,9 @@ function SearchBar() {
         placeholder="Rechercher un livre" 
         value={searchTerm} 
         onChange={(e) => setSearchTerm(e.target.value)} 
-      />
+      /><div className='wrapper'>
       <button className="search-btn" type="submit">Rechercher</button>
+      </div>
     </form>
   );
 }

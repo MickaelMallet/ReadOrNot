@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import SearchBar from '../Search/SearchBar';
 // import { Link } from 'react-router-dom';
 import './style.scss';
 
@@ -15,9 +16,15 @@ fetch('http://kilianthoraval-server.eddi.cloud:8080/book/2')
 console.log("book", book);
 
 return (
+
+  
 <div className="home-container">
+<div className='searchHome'>
+<SearchBar/>
+</div>
 <div className="home-left">
-<h1>Votre prochaine aventure littéraire, savamment orchestrée</h1>
+
+<h1>Votre prochaine aventure littéraire, savamment <i>orchestrée</i></h1>
 <p>
 Laissez-vous guider par notre traqueur de livres pour des lectures personnalisées. Notre bibliothèque s'adapte à vos goûts et vos envies pour une expérience de lecture unique.
 </p>
