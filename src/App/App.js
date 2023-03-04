@@ -52,7 +52,14 @@ function App() {
                 <Navbar />
                 <Mypage />
                 </>} />
-              <Route path="/search" element={<SearchResults />} />
+                <Route path="/search" element={<>
+                 <Navbar />
+                  <SearchBar />
+                    </>} />
+              <Route path="/search/:query" element={<>
+                  <Navbar />
+                    <SearchResults />
+                  </>} />
               <Route path="/contact" element={<>
                 <Navbar />
                 <ContactForm/>
