@@ -1,15 +1,29 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
-function SearchResults() {
-  const { searchTerm } = useParams(); // récupère le terme de recherche dans l'URL
+function SearchResults({ searchTerm }) {
+  const [books, setBooks] = useState([]);
 
-  // TODO: récupérer les résultats de la recherche depuis la BDD
+  useEffect(() => {
+    // appel de l'API avec fetch 
+    fetch(`http://kilianthoraval-server.eddi.cloud:8080/search?inputsearch=${searchTerm}`)
+      .then((response) => response.json())
+      .then((data) => setBooks(data))
+      .catch((error) => console.error(error));
+  }, [searchTerm]);
 
   return (
-    <div>
-      <h1>Bon,la bientôt, les résultats "{searchTerm}"</h1>
-      {/* TODO: afficher les résultats de la recherche */}
+    <div className="search-results">
+      {books.map((book) => (
+        <div key={book.id} className="search-result">
+          <div className="search-result-cover">
+            <img src={book.img} alt="book cover" />
+          </div>
+          <div className="search-result-details">
+            <h3>{book.title}</h3>
+            <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
