@@ -14,7 +14,11 @@ function SearchBar() {
       const response = await fetch(`http://kilianthoraval-server.eddi.cloud:8080/search?inputsearch=${searchTerm}`);
       const results = await response.json();
       setSearchResults(results);
+      // Ajout d'un console log pour afficher les résultats dans la console du navigateur
+      console.log(results); 
       setSearchTerm('');
+      // Rediriger vers la page des résultats de recherche
+      navigate(`/search?inputsearch=${searchTerm}`); 
     } catch (error) {
       console.error(error);
     }

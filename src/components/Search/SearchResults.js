@@ -14,8 +14,14 @@ function SearchResults({ searchTerm }) {
   return (
     <div className="search-results">
       {books.map((book) => (
-        <div key={book.id} className="mypage-carousel-item">
-          <img src={book.img} alt={book.title}/>
+        <div key={book.id} className="search-result">
+          <div className="search-result-cover">
+            <img src={book.img} alt="book cover" />
+          </div>
+          <div className="search-result-details">
+            <h3>{book.title}</h3>
+            <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p>
+          </div>
         </div>
       ))}
     </div>
