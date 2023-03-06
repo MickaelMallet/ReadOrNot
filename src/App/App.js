@@ -1,19 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Form, Route, Routes } from 'react-router-dom';
-import Navbar from '../components/navbar/Navbar';
-import Home from '../components/home/Home';
-import Signup from '../components/auth/Signup';
-import Footer from '../components/footer/Index';
-import LoginPage from '../components/auth/Login';
-import MentionsLegales from '../components/Mentions/MentionsLegales';
-import ContactForm from '../components/contact/ContactForm';
-import About from '../components/About/About'
-// import LibraryPage from '../components/library';
+import Navbar from '../Components/Navbar/Navbar';
+import Home from '../Components/Home/Home';
+import Signup from '../Components/Auth/Signup';
+import Footer from '../Components/Footer/Index';
+import LoginPage from '../Components/Auth/Login';
+import MentionsLegales from '../Components/Mentions/MentionsLegales';
+import ContactForm from '../Components/Contact/ContactForm';
+import About from '../Components/About/About'
 import Loader from './Loader';
-import SearchBar from '../components/Search/SearchBar';
-import SearchResults from '../components/Search/SearchResults';
-import Mypage from '../components/Mypage/Mypage';
-
+import SearchBar from '../Components/Search/SearchBar';
+import SearchResults from '../Components/Search/SearchResults';
+import Mypage from '../Components/Mypage/Mypage';
 import './loaderStyle.scss';
 import './style.scss';
 
