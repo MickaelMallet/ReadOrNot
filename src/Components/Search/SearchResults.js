@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
 function SearchResults({ searchTerm }) {
-  const [books, setBooks] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    // appel de l'API avec fetch 
-    fetch(`http://kilianthoraval-server.eddi.cloud:8080/search?inputsearch=${searchTerm}`)
-      .then((response) => response.json())
-      .then((data) => setBooks(data))
-      .catch((error) => console.error(error));
+    const fetchData = async () => {
+      const response = await fetch(`http://kilianthoraval-server.eddi.cloud:8080/search?inputsearch=${searchTerm}`);
+      const result = await response.json();
+      setData(result);
+    };
+    
+    fetchData();
   }, [searchTerm]);
 
   return (
     <div className="search-results">
-      {books.map((book) => (
+      {data.map((book) => (
         <div key={book.id} className="search-result">
           <div className="search-result-cover">
             <img src={book.img} alt="book cover" />
@@ -29,3 +31,4 @@ function SearchResults({ searchTerm }) {
 }
 
 export default SearchResults;
+

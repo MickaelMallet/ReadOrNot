@@ -4,7 +4,7 @@ import myGifOfKiki from './Kiki.gif';
 import myGifOfMika from './Mika.gif';
 import myGifOfJm from './Jm.gif';
 import image from './dev.png';
-import '../About/About.scss';
+import './About.scss';
 
 
 const dev = image;

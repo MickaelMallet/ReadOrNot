@@ -17,9 +17,6 @@ const Mypage = () => {
     fetchData();
   }, []);
 
-  // const handleSlideChange = (event) => {
-  //   setCurrentIndex(event.item);
-  // };
 
   const responsive = {
     0: { items: 1 },

@@ -6,9 +6,8 @@ function Signup(props) {
 const navigate = useNavigate();
 const [pseudo, setPseudo] = useState('');
 const [password, setPassword] = useState('');
-// const [passwordConfirm, setPasswordConfirm] = useState('');
 const [email, setEmail] = useState('');
-// const [emailConfirm, setEmailConfirm] = useState('');
+
 
 const handlePseudoChange = (event) => {
 setPseudo(event.target.value);
@@ -18,17 +17,11 @@ const handlePasswordChange = (event) => {
 setPassword(event.target.value);
 };
 
-// const handlePasswordConfirmChange = (event) => {
-// setPasswordConfirm(event.target.value);
-// };
 
 const handleEmailChange = (event) => {
 setEmail(event.target.value);
 };
 
-// const handleEmailConfirmChange = (event) => {
-// setEmailConfirm(event.target.value);
-// };
 
 const handleSubmit = async (event) => {
   event.preventDefault();
