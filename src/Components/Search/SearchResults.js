@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-function SearchResults({ searchTerm }) {
+function SearchResults() {
   const [data, setData] = useState([]);
+
+  const queryParameters = new URLSearchParams(window.location.search);
+  const searchTerm = queryParameters.get("inputsearch");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,7 +25,7 @@ function SearchResults({ searchTerm }) {
           </div>
           <div className="search-result-details">
             <h3>{book.title}</h3>
-            <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p>
+            {/* <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p> */}
           </div>
         </div>
       ))}

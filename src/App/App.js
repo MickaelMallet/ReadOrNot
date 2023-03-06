@@ -52,12 +52,12 @@ function App() {
                 </>} />
                 <Route path="/search" element={<>
                  <Navbar />
-                  <SearchBar />
+                  <SearchResults />
                     </>} />
-              <Route path="/search/:query" element={<>
+                {/* <Route path="/search/:query" element={<>
                   <Navbar />
                     <SearchResults />
-                  </>} />
+                  </>} /> */}
               <Route path="/contact" element={<>
                 <Navbar />
                 <ContactForm/>
