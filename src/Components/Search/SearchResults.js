@@ -20,7 +20,9 @@ function SearchResults() {
 
 
   return (
+    // <div className='search-container'>
     <div className="search-results">
+      {/* <h1 className='' */}
       {data.map((book) => (
         <div key={book.id} className="search-result">
         <Link to={`/books/${book.id}`}>
@@ -35,6 +37,8 @@ function SearchResults() {
         </div>
       ))}
     </div>
+    // </div>
+
   );
 }
 
