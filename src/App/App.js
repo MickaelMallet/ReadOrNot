@@ -12,6 +12,7 @@ import Loader from './Loader';
 import SearchBar from '../Components/Search/SearchBar';
 import SearchResults from '../Components/Search/SearchResults';
 import Mypage from '../Components/Mypage/Mypage';
+import BookDetails from '../Components/Books/BookDetail'
 import './loaderStyle.scss';
 import './style.scss';
 
@@ -52,12 +53,13 @@ function App() {
                 </>} />
                 <Route path="/search" element={<>
                  <Navbar />
+                  {/* <SearchBar /> */}
                   <SearchResults />
                     </>} />
-                {/* <Route path="/search/:query" element={<>
-                  <Navbar />
-                    <SearchResults />
-                  </>} /> */}
+              <Route path="/books/:id" element={<>
+                <Navbar />
+                <BookDetails /> 
+              </>} />
               <Route path="/contact" element={<>
                 <Navbar />
                 <ContactForm/>
