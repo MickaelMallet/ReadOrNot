@@ -50,8 +50,8 @@ function BookDetails({ match }) {
       <p className='author'>Auteur : {book.author.firstname} {book.author.lastname}</p>
       <p className='type'>Genre : {book.category.name}</p>
       <div className='buttonClick'>
-      <button className='toRead' onClick={handleToReadClick}>A lire</button>
-      <button className='Read' onClick={handleReadClick}>Lu</button>
+      <button className='toRead' onClick={handleToReadClick}>A lire 📖 </button>
+      <button className='Read' onClick={handleReadClick}>Lu 📚 </button>
       </div>
       </div>
     </div>

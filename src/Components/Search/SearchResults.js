@@ -20,7 +20,7 @@ function SearchResults() {
 
 
   return (
-    // <div className='search-container'>
+    <div className='search-container'>
     <div className="search-results">
       {/* <h1 className='' */}
       {data.map((book) => (
@@ -32,7 +32,9 @@ function SearchResults() {
           <div className="search-result-details">
             <h3>{book.title}</h3>
 
-            <p>Par: {book.firstname} {book.lastname},</p> <p> Genre: {book.name}, {book.description}</p>
+            <p>{book.firstname} {book.lastname}</p> 
+            <p> Genre : {book.name} </p>
+            <p> Description : {book.description}</p>
             {/* <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p> */}
 
           </div>
@@ -40,7 +42,7 @@ function SearchResults() {
         </div>
       ))}
     </div>
-    // </div>
+ </div>
 
   );
 }

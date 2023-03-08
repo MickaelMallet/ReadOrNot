@@ -1,3 +1,8 @@
+
+.search-container{
+  height: 400em;
+
+
 .search-results {
   display: grid;
   margin-top: 200px;
@@ -32,7 +37,6 @@
     justify-content: center;
     align-items: center;
     width: 350px;
-    margin-bottom: 20px;
     overflow: hidden;
   
     img {
@@ -55,12 +59,15 @@
   
     h3 {
       display:block;
-      font-size: 1rem;
+      font-size: 1.5em;
     }
   
     p {
       font-size: 0.9rem;
-      line-height: 1.5;
+      margin: 5px;
+      :first-child{
+
+      }
     }
   }
-  
+  }

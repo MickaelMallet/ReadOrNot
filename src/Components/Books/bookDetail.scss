@@ -4,6 +4,14 @@
 			0 10px 10px rgba(0,0,0,0.22);
 	max-width: 100%;
 	min-height: 480px;
+
+
+  h2{
+    margin-top: 170px;
+    padding-top: 7px;
+    font-size: 2em;
+    margin-bottom: 0;
+  }
 }
 
 .bookSubBox {
@@ -11,7 +19,7 @@
     
     img {
       margin: 20px;
-      max-width: 18em;
+      max-width: 16em;
       display: flex;
     }
 
@@ -25,25 +33,29 @@
 
         
     .description{
-        font-size: 20px;
+        font-size: 17px;
+        margin-bottom: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
 
     }
 
     .author{
-
+        font-weight: bold;
+        margin: 0;
 
     }
 
     .type{
-
+        font-weight: bold;
     }
     }
     .buttonClick{
-       
+       margin-top: 2em;
         
         
             
-            *,*::before,*::after{box-sizing: border-box;}
+*,*::before,*::after{box-sizing: border-box;}
 
 
 
@@ -53,7 +65,7 @@
             cursor:pointer;
             overflow:hidden;
             position: relative;
-            background-color: #10a14d;
+            background-color: #6da881;
             border-radius: 9999px;
             padding:15px 40px;
             transition: box-shadow .4s;
@@ -63,11 +75,6 @@
 	    }
 	
 
-        button:hover{
-
-            box-shadow:0 0 40px #d4df77;
-
-    }
         
         
         button::before {
@@ -96,7 +103,7 @@
             cursor:pointer;
             overflow:hidden;
             position: relative;
-            background-color: #10a14d;
+            background-color: #6da881;
             border-radius: 9999px;
             padding:15px 40px;
             transition: box-shadow .4s;
@@ -108,7 +115,7 @@
 
         button:hover{
 
-            box-shadow:0 0 40px #d4df77;
+            box-shadow:0 0 40px #6e724d;
 
     }
         
@@ -138,7 +145,4 @@
         }
 
 
-  h2{
-    margin-top: 8em;
-  }
   
