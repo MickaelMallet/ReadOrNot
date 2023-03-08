@@ -25,14 +25,14 @@ function SearchResults() {
       {/* <h1 className='' */}
       {data.map((book) => (
         <div key={book.id} className="search-result">
-        <Link to={`/books/${book.id}`}>
+        <Link to={`/books/${book.id}`} className="link">
           <div className="search-result-cover">
             <img src={book.img} alt="book cover" />
           </div>
           <div className="search-result-details">
             <h3>{book.title}</h3>
 
-            <p>Par: {book.firstname} {book.lastname}, Genre: {book.name}, {book.description}</p>
+            <p>Par: {book.firstname} {book.lastname},</p> <p> Genre: {book.name}, {book.description}</p>
             {/* <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p> */}
 
           </div>
