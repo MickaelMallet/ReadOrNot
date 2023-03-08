@@ -22,7 +22,7 @@ function SearchResults({ searchTerm }) {
           </div>
           <div className="search-result-details">
             <h3>{book.title}</h3>
-            <p>Par: {book.author.firstname} {book.author.lastname}, Genre: {book.category.name}, {book.description}</p>
+            <p>Par: {book.firstname} {book.lastname}, Genre: {book.name}, {book.description}</p>
           </div>
         </div>
       ))}
