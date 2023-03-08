@@ -5,15 +5,7 @@
 	box-sizing: border-box;
 }
 
-// body {
-// 	background: white;
-// 	justify-content: center;
-// 	flex-direction: column;
-// 	font-family: 'Montserrat', sans-serif;
-// 	// height: 100vh;
-// 	margin: -10px 0 50px;
 
-// }
 
 h1 {
 	font-weight: bold;
@@ -33,9 +25,7 @@ p {
 	margin: 20px 0 30px;
 }
 
-// span {
-// 	font-size: 12px;
-// }
+
 
 a {
 	color: black;
@@ -45,32 +35,6 @@ a {
 	font-weight: bold;
 }
 
-// button {
-// 	border-radius: 20px;
-// 	border: 1px solid #4C7C6C;
-// 	background-color: #4C7C6C;
-// 	color: #FFFFFF;
-// 	font-size: 12px;
-// 	font-weight: bold;
-// 	padding: 12px 45px;
-// 	letter-spacing: 1px;
-// 	text-transform: uppercase;
-// 	transition: transform 80ms ease-in;
-// }
-
-// button:active {
-// 	transform: scale(0.95);
-// }
-
-// button:focus {
-// 	outline: none;
-// }
-
-// button.ghost {
-// 	background-color: transparent;
-// 	border-color: black;
-// 	color: black;
-// }
 
 form {
 	background-color: #FFFFFF;
@@ -202,9 +166,6 @@ input[type="submit"]:hover {
 	transition: transform 0.6s ease-in-out;
 }
 
-// .overlay-left {
-// 	transform: translateX(-20%);
-// }
 
 .container.right-panel-active .overlay-left {
 	transform: translateX(0);
@@ -215,6 +176,3 @@ input[type="submit"]:hover {
 	transform: translateX(0);
 }
 
-// .container.right-panel-active .overlay-right {
-// 	transform: translateX(20%);
-// }

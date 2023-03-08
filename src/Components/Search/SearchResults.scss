@@ -1,8 +1,8 @@
 .search-results {
   display: grid;
-  margin-top: 250px;
+  margin-top: 200px;
   justify-content: center;
-  width: 80vw;
+  width: 20em;
   height: 200px;
   justify-items: center;
  
@@ -41,7 +41,7 @@
       height: 100%;
       justify-content: center;
       max-width: 300px;
-      max-height: 500px;
+      height: 500px;
       object-fit: cover;
     }
   }
