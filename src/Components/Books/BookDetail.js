@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './bookDetail.scss';
 
 function BookDetails({ match }) {
   const [book, setBook] = useState(null);
@@ -39,13 +40,22 @@ function BookDetails({ match }) {
 
   return (
     <div>
+    <div className='bookBox'>
       <h2>{book.title}</h2>
+    <div className='bookSubBox'>
+
       <img src={book.img} alt={book.title} />
-      <p>{book.description}</p>
-      <p>Auteur : {book.author.firstname} {book.author.lastname}</p>
-      <p>Genre : {book.category.name}</p>
-      <button onClick={handleToReadClick}>A lire</button>
-      <button onClick={handleReadClick}>Lu</button>
+      <div className='descriptionBox'>
+      <p className='description'>{book.description}</p>
+      <p className='author'>Auteur : {book.author.firstname} {book.author.lastname}</p>
+      <p className='type'>Genre : {book.category.name}</p>
+      <div className='buttonClick'>
+      <button className='toRead' onClick={handleToReadClick}>A lire</button>
+      <button className='Read' onClick={handleReadClick}>Lu</button>
+      </div>
+      </div>
+    </div>
+    </div>
     </div>
   );
 }
