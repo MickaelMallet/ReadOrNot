@@ -7,6 +7,11 @@
 
   }
   
+  .bibliotheque-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+  }
   // .mypage-carousel {
   //   width: 100%;
   //   height: 400px;
@@ -18,7 +23,47 @@
   // .mypage-carousel:first-child {
   //   margin-bottom: 50px;
   // }
+ 
+  // .mypage-carousel-item img:hover {
+  //   transform: translate(0, -3px);
+  //   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+  // }
+
+  .photo {
+    position: relative;
+    display:inline-block;
+    transition: transform 0.2s ease-in-out;
+  }
   
+  .photo::after {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 132, 66, 0.4);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    height: 30em; /* ajuster cette valeur selon la hauteur souhaitée */
+    border-radius: 20px;
+  }
+  
+  .photo:hover::after {
+    opacity: 1;
+  }
+
+  .photo:hover {
+    transform: translateY(-5px);
+    transform: scale(1.02);
+  }
+
+  .mypage-carousel-item img {
+    height: 30em; /* ajuster cette valeur selon la hauteur souhaitée */
+    border-radius: 10px;
+    // transition: transform 0.5s ease-out;
+  }
+
   .mypage-carousel-item {
     text-align: center;
     display: flex;
@@ -27,15 +72,7 @@
     margin: 0;
   }
   
-  .mypage-carousel-item img {
-    height: 30em; /* ajuster cette valeur selon la hauteur souhaitée */
-    border-radius: 10px;
-    // transition: transform 0.5s ease-out;
-  }
-  // .mypage-carousel-item img:hover {
-  //   transform: translate(0, -3px);
-  //   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-  // }
+  
   .mypage-carousel-item img:hover {
  
   }
