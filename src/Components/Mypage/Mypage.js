@@ -64,7 +64,7 @@ const itemsBookToRead = booksToRead.map((book) => (
 return (
 <div className="mypage-container">
 <h1 className="bibliotheque-title">Ma Bibliothèque</h1>
-<h2>Livres lus</h2>
+<h2>Livres à lire</h2>
 <AliceCarousel
      items={itemsBookRead}
      responsive={responsive}
@@ -72,7 +72,7 @@ return (
      dotsDisabled={true}
      buttonsDisabled={true}
    />
-<h2>Livres à lire</h2>
+<h2>Livres lus</h2>
 <AliceCarousel
      items={itemsBookToRead}
      responsive={responsive}
