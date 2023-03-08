@@ -1,11 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './bookDetail.scss'
 
 function BookDetails({ match }) {
   const [book, setBook] = useState(null);
-
   const { id } = useParams();
+
+  const handleToReadClick = () => {
+    // Mettez à jour la liste "à lire" dans le local storage en ajoutant le livre
+    const toReadList = JSON.parse(localStorage.getItem("toReadList") || "[]");
+    localStorage.setItem(
+      "toReadList",
+      JSON.stringify([...toReadList, book.id])
+    );
+  };
+
+  const handleReadClick = () => {
+    // Mettez à jour la liste "lu" dans le local storage en ajoutant le livre
+    const readList = JSON.parse(localStorage.getItem("readList") || "[]");
+    localStorage.setItem(
+      "readList",
+      JSON.stringify([...readList, book.id])
+    );
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,6 +44,8 @@ function BookDetails({ match }) {
       <p>{book.description}</p>
       <p>Auteur : {book.author.firstname} {book.author.lastname}</p>
       <p>Genre : {book.category.name}</p>
+      <button onClick={handleToReadClick}>A lire</button>
+      <button onClick={handleReadClick}>Lu</button>
     </div>
   );
 }
