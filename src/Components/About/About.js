@@ -16,23 +16,23 @@ function About(){
 
         <div className='gifAbout-container'>
         <figure className='imageDev'>
-        <img className='dev' src={dev} alt="image" />
+        <img className='dev' src={dev} alt="" />
         </figure>
         <div className='pics'>
         <figure className='pic'>
-        <img src={myGifOfWiwi} alt="Photo of Wiwi" />
+        <img src={myGifOfWiwi} alt="" />
         <figcaption className='pic-legendeWiwi'>Photo of Wiwi</figcaption>
         </figure>
         <figure className='pic'>
-        <img src={myGifOfKiki} alt="Photo of Kiki" />
+        <img src={myGifOfKiki} alt="" />
         <figcaption className='pic-legendeKiki'>Photo of Kiki</figcaption>
         </figure>
         <figure className='pic'>
-        <img src={myGifOfMika} alt="Photo of Mika" /> 
+        <img src={myGifOfMika} alt="" /> 
         <figcaption className='pic-legendeMika'>Photo of Mika</figcaption>
         </figure> 
         <figure className='pic'>
-        <img src={myGifOfJm} alt="Photo of Jm" /> 
+        <img src={myGifOfJm} alt="" /> 
         <figcaption className='pic-legendeJm'>Photo of Jm</figcaption>
         </figure>
         </div>

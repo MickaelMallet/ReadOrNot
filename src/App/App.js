@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Form, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router , Route, Routes } from 'react-router-dom';
 import Navbar from '../Components/Navbar/Navbar';
 import Home from '../Components/Home/Home';
 import Signup from '../Components/Auth/Signup';
@@ -9,7 +9,7 @@ import MentionsLegales from '../Components/Mentions/MentionsLegales';
 import ContactForm from '../Components/Contact/ContactForm';
 import About from '../Components/About/About'
 import Loader from './Loader';
-import SearchBar from '../Components/Search/SearchBar';
+// import SearchBar from '../Components/Search/SearchBar';
 import SearchResults from '../Components/Search/SearchResults';
 import Mypage from '../Components/Mypage/Mypage';
 import BookDetails from '../Components/Books/BookDetail'
