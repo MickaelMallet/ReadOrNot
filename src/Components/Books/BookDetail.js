@@ -6,7 +6,7 @@ function BookDetails({ match }) {
   const { id } = useParams();
 
   const handleToReadClick = () => {
-    // Mettez à jour la liste "à lire" dans le local storage en ajoutant le livre
+    // Met à jour la liste "à lire" dans le local storage en ajoutant le livre
     const toReadList = JSON.parse(localStorage.getItem("toReadList") || "[]");
     localStorage.setItem(
       "toReadList",
@@ -15,7 +15,7 @@ function BookDetails({ match }) {
   };
 
   const handleReadClick = () => {
-    // Mettez à jour la liste "lu" dans le local storage en ajoutant le livre
+    // Met à jour la liste "lu" dans le local storage en ajoutant le livre
     const readList = JSON.parse(localStorage.getItem("readList") || "[]");
     localStorage.setItem(
       "readList",

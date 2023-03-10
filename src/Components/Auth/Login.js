@@ -40,6 +40,7 @@ console.log('Sending request:', requestOptions);
 const response = await fetch('http://kilianthoraval-server.eddi.cloud:8080/login', requestOptions)
   .then(response => response.json())
   .then(data => {
+    console.log('Response :', response);
     console.log('Response received:', data);
 
     if (data.token) {

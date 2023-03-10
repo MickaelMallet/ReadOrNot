@@ -4,7 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import "./Mypage.scss";
 
 const Mypage = () => {
-const [currentIndex, setCurrentIndex] = useState(0);
+const [currentIndex] = useState(0);
 const [data, setData] = useState([]);
 const [toReadList, setToReadList] = useState([]);
 const [readList, setReadList] = useState([]);
