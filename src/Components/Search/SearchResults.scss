@@ -1,8 +1,13 @@
+
+.search-container{
+  height: 400em;
+
+
 .search-results {
   display: grid;
-  margin-top: 250px;
+  margin-top: 200px;
   justify-content: center;
-  width: 80vw;
+  width: 20em;
   height: 200px;
   justify-items: center;
  
@@ -32,7 +37,6 @@
     justify-content: center;
     align-items: center;
     width: 350px;
-    margin-bottom: 20px;
     overflow: hidden;
   
     img {
@@ -41,7 +45,7 @@
       height: 100%;
       justify-content: center;
       max-width: 300px;
-      max-height: 500px;
+      height: 500px;
       object-fit: cover;
     }
   }
@@ -55,12 +59,15 @@
   
     h3 {
       display:block;
-      font-size: 1rem;
+      font-size: 1.5em;
     }
   
     p {
       font-size: 0.9rem;
-      line-height: 1.5;
+      margin: 5px;
+      :first-child{
+
+      }
     }
   }
-  
+  }

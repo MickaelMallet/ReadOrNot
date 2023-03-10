@@ -1,0 +1,137 @@
+.bookBox{
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	max-width: 100%;
+	min-height: 480px;
+
+
+  h2{
+    margin-top: 170px;
+    padding-top: 7px;
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+}
+
+.bookSubBox {
+    display: flex;
+    
+    img {
+      margin: 20px;
+      max-width: 16em;
+      display: flex;
+    }
+
+    .descriptionBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 600px;
+
+        
+    .description{
+        font-size: 17px;
+        margin-bottom: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+
+    }
+
+    .author{
+        font-weight: bold;
+        margin: 0;
+
+    }
+
+    .type{
+        font-weight: bold;
+    }
+    }
+    .buttonClick{
+       margin-top: 2em;
+       display: flex;
+
+    .toReadBox{
+        display: flex;
+        flex-direction: column;
+
+        .toRead{
+            margin-bottom: 10px;
+        }
+    }
+    .boxRead{
+        display: flex;
+        flex-direction: column;
+        
+        .Read{
+            margin-bottom: 10px;
+        }  
+    }
+        
+        
+            
+*,*::before,*::after{box-sizing: border-box;}
+
+
+
+
+        .toRead, .Read{
+            all:unset;
+            cursor:pointer;
+            overflow:hidden;
+            position: relative;
+            background-color: #6da881;
+            border-radius: 9999px;
+            padding:15px 40px;
+            transition: box-shadow .4s;
+            color: white; 
+            font-size: 1rem;
+            margin-right: 3em;
+	    }
+        .eraseToRead, .eraseRead{
+            all:unset;
+            cursor:pointer;
+            overflow:hidden;
+            position: relative;
+            background-color: #a88e6d;
+            border-radius: 9999px;
+            padding:15px 40px;
+            transition: box-shadow .4s;
+            color: white; 
+            font-size: 1rem;
+            margin-right: 3em;
+	    }
+	
+
+        
+        
+        button::before {
+        
+        content: '';
+            position: absolute;
+            background:linear-gradient(90deg,transparent,rgba(255, 255, 255, 0.8),transparent);
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0;
+            transition: transform 1s ease-in-out;
+            transform:translateX(-100%)
+        
+        }
+        
+
+        button:hover::before {
+        
+            transform: translateX(100%)
+
+        
+        }
+        
+            }
+        }
+
+
+  

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./Mypage.scss";
@@ -38,21 +39,32 @@ const responsive = {
 };
 
 const itemsBookRead = booksRead.map((book) => (
-<div key={book.id} className="mypage-carousel-item">
-<img src={book.img} alt={book.title}/>
-</div>
+  <div >
+  <Link to={`/books/${book.id}`} className="link"> 
+  <div key={book.id} className="mypage-carousel-item">
+  
+  <img className="photo" src={book.img} alt={book.title}/>
+  </div>
+  </Link>
+  </div>
 ));
 
 const itemsBookToRead = booksToRead.map((book) => (
+<div >
+<Link to={`/books/${book.id}`} className="link"> 
 <div key={book.id} className="mypage-carousel-item">
-<img src={book.img} alt={book.title} />
+
+<img className="photo" src={book.img} alt={book.title}/>
 </div>
+</Link>
+</div>
+
 ));
 
 return (
 <div className="mypage-container">
-<h1>Ma Bibliothèque</h1>
-<h2>Livres lus</h2>
+<h1 className="bibliotheque-title">Ma Bibliothèque</h1>
+<h2>Livres à lire</h2>
 <AliceCarousel
      items={itemsBookRead}
      responsive={responsive}
@@ -60,7 +72,7 @@ return (
      dotsDisabled={true}
      buttonsDisabled={true}
    />
-<h2>Livres à lire</h2>
+<h2>Livres lus</h2>
 <AliceCarousel
      items={itemsBookToRead}
      responsive={responsive}
@@ -68,6 +80,7 @@ return (
      dotsDisabled={true}
      buttonsDisabled={true}
    />
+   
 </div>
 );
 };
