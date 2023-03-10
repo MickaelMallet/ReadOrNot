@@ -37,16 +37,14 @@ const handleSubmit = async (event) => {
 
   try {
       const response = await fetch('http://kilianthoraval-server.eddi.cloud:8080/signup', requestOptions);
-      const data = await response.json();
+      
 
-      console.log('Response received:', data);
+      console.log('Response received:', response);
 
       if (response.ok) {
         
           navigate('/login');
-      } else {
-          alert(data.error);
-      }
+      } 
   } catch (error) {
       console.error('Error:', error);
       alert('Erreur de communication avec le serveur');
